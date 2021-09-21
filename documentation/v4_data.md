@@ -80,7 +80,7 @@ This is a comprehensive API that provides state and details as of the current da
 ```
 
 - The API is an object with keys corresponding to the two letter StateCode for each state.
-- Each State object has the following keys: __districts__, __delta__, __delta7__, __meta__ and __total__. The districts object is a hash object where the keys represent individual districts in the state. The remaing three keys have the save behaviour across states and district objects. They are explained below:
+- Each State object has the following keys: __districts__, __delta__, __delta7__, __meta__ and __total__. The districts object is a hash object where the keys represent individual districts in the state. The remaining three keys have the save behaviour across states and district objects. They are explained below:
 - meta: This substructure provides the following details:
   - last_updated: This tells when the current state/district value was updated.
   - population: This gives the population of the state (based on NCP projections) and districts (based on 2011 census)
@@ -92,5 +92,5 @@ This is a comprehensive API that provides state and details as of the current da
 
 ## Usage and Caveats
 
-- This API has data that corresponds to the data seen on the website as of today. This includes, cumulative, delta and testing numbers across states and districts.
+- This API has data that corresponds to the data seen on the website as of today. This includes cumulative, delta and testing numbers across states and districts.
 - The keys under __delta__, __meta__ and __total__ are present only if there is a corresponding value for the same. Example, if a specific district does not see any change in recovery numbers for today, the __recovered__ key under __delta__ for that district will not be present.
